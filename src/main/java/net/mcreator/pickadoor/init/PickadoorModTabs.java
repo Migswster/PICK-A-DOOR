@@ -23,6 +23,7 @@ public class PickadoorModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(PickadoorModItems.SEWER_SHADOW_SPAWN_EGG.get());
 			tabData.accept(PickadoorModItems.ARACHNID_SPAWN_EGG.get());
+			tabData.accept(PickadoorModItems.SAND_SPIRIT_SPAWN_EGG.get());
 		}
 	}
 }

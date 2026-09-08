@@ -19,6 +19,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.pickadoor.init.PickadoorModTabs;
+import net.mcreator.pickadoor.init.PickadoorModParticleTypes;
 import net.mcreator.pickadoor.init.PickadoorModItems;
 import net.mcreator.pickadoor.init.PickadoorModEntities;
 
@@ -45,6 +46,7 @@ public class PickadoorMod {
 		PickadoorModItems.REGISTRY.register(modEventBus);
 		PickadoorModEntities.REGISTRY.register(modEventBus);
 		PickadoorModTabs.REGISTRY.register(modEventBus);
+		PickadoorModParticleTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

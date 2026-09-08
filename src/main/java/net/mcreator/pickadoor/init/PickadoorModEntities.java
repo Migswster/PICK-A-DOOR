@@ -16,6 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.pickadoor.entity.SewerShadowEntity;
+import net.mcreator.pickadoor.entity.SandSpiritEntity;
 import net.mcreator.pickadoor.entity.ArachnidEntity;
 import net.mcreator.pickadoor.PickadoorMod;
 
@@ -30,6 +31,8 @@ public class PickadoorModEntities {
 			EntityType.Builder.<ArachnidEntity>of(ArachnidEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SandSpiritEntity>> SAND_SPIRIT = register("sand_spirit",
+			EntityType.Builder.<SandSpiritEntity>of(SandSpiritEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -41,11 +44,13 @@ public class PickadoorModEntities {
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		SewerShadowEntity.init(event);
 		ArachnidEntity.init(event);
+		SandSpiritEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(SEWER_SHADOW.get(), SewerShadowEntity.createAttributes().build());
 		event.put(ARACHNID.get(), ArachnidEntity.createAttributes().build());
+		event.put(SAND_SPIRIT.get(), SandSpiritEntity.createAttributes().build());
 	}
 }

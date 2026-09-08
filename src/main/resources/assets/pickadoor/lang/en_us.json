@@ -2,5 +2,7 @@
   "entity.pickadoor.sewer_shadow": "Sewer Shadow",
   "item.pickadoor.sewer_shadow_spawn_egg": "Sewer Shadow Spawn Egg",
   "item.pickadoor.arachnid_spawn_egg": "Arachnid Spawn Egg",
-  "entity.pickadoor.arachnid": "Arachnid"
+  "entity.pickadoor.arachnid": "Arachnid",
+  "item.pickadoor.sand_spirit_spawn_egg": "Sand Spirit Spawn Egg",
+  "entity.pickadoor.sand_spirit": "Sand Spirit"
 }
