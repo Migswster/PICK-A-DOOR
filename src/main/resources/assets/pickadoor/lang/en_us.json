@@ -1,4 +1,6 @@
 {
   "entity.pickadoor.sewer_shadow": "Sewer Shadow",
-  "item.pickadoor.sewer_shadow_spawn_egg": "Sewer Shadow Spawn Egg"
+  "item.pickadoor.sewer_shadow_spawn_egg": "Sewer Shadow Spawn Egg",
+  "item.pickadoor.arachnid_spawn_egg": "Arachnid Spawn Egg",
+  "entity.pickadoor.arachnid": "Arachnid"
 }

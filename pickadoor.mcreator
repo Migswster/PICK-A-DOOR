@@ -14,6 +14,40 @@
           "src/main/resources/data/pickadoor/neoforge/biome_modifier/sewer_shadow_biome_modifier.json"
         ]
       }
+    },
+    {
+      "name": "ArachnidPlaybackIdleCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arachnid_playback_idle_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/pickadoor/procedures/ArachnidPlaybackIdleConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Arachnid",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arachnid",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/pickadoor/neoforge/biome_modifier/arachnid_biome_modifier.json",
+          "src/main/resources/assets/pickadoor/models/item/arachnid_spawn_egg.json",
+          "src/main/java/net/mcreator/pickadoor/client/renderer/ArachnidRenderer.java",
+          "src/main/java/net/mcreator/pickadoor/entity/ArachnidEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -23,7 +57,9 @@
   "language_map": {
     "en_us": {
       "entity.pickadoor.sewer_shadow": "Sewer Shadow",
-      "item.pickadoor.sewer_shadow_spawn_egg": "Sewer Shadow Spawn Egg"
+      "item.pickadoor.sewer_shadow_spawn_egg": "Sewer Shadow Spawn Egg",
+      "item.pickadoor.arachnid_spawn_egg": "Arachnid Spawn Egg",
+      "entity.pickadoor.arachnid": "Arachnid"
     }
   },
   "metadata": {

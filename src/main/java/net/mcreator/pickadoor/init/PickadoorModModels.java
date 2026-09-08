@@ -9,11 +9,13 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.pickadoor.client.model.ModelSewer_Shadow;
+import net.mcreator.pickadoor.client.model.ModelArachnid;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class PickadoorModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ModelSewer_Shadow.LAYER_LOCATION, ModelSewer_Shadow::createBodyLayer);
+		event.registerLayerDefinition(ModelArachnid.LAYER_LOCATION, ModelArachnid::createBodyLayer);
 	}
 }

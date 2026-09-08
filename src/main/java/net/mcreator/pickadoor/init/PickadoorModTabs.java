@@ -22,6 +22,7 @@ public class PickadoorModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(PickadoorModItems.SEWER_SHADOW_SPAWN_EGG.get());
+			tabData.accept(PickadoorModItems.ARACHNID_SPAWN_EGG.get());
 		}
 	}
 }
