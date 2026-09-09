@@ -16,10 +16,12 @@ public class PickadoorModItems {
 	public static final DeferredItem<Item> SEWER_SHADOW_SPAWN_EGG;
 	public static final DeferredItem<Item> ARACHNID_SPAWN_EGG;
 	public static final DeferredItem<Item> SAND_SPIRIT_SPAWN_EGG;
+	public static final DeferredItem<Item> IKEA_EMPLOYEE_SPAWN_EGG;
 	static {
 		SEWER_SHADOW_SPAWN_EGG = REGISTRY.register("sewer_shadow_spawn_egg", () -> new DeferredSpawnEggItem(PickadoorModEntities.SEWER_SHADOW, -1, -1, new Item.Properties()));
 		ARACHNID_SPAWN_EGG = REGISTRY.register("arachnid_spawn_egg", () -> new DeferredSpawnEggItem(PickadoorModEntities.ARACHNID, -1, -1, new Item.Properties()));
 		SAND_SPIRIT_SPAWN_EGG = REGISTRY.register("sand_spirit_spawn_egg", () -> new DeferredSpawnEggItem(PickadoorModEntities.SAND_SPIRIT, -1, -1, new Item.Properties()));
+		IKEA_EMPLOYEE_SPAWN_EGG = REGISTRY.register("ikea_employee_spawn_egg", () -> new DeferredSpawnEggItem(PickadoorModEntities.IKEA_EMPLOYEE, -1, -1, new Item.Properties()));
 	}
 	// Start of user code block custom items
 	// End of user code block custom items

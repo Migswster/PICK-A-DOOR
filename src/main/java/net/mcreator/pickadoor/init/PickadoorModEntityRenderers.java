@@ -10,6 +10,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.pickadoor.client.renderer.SewerShadowRenderer;
 import net.mcreator.pickadoor.client.renderer.SandSpiritRenderer;
+import net.mcreator.pickadoor.client.renderer.IkeaEmployeeRenderer;
 import net.mcreator.pickadoor.client.renderer.ArachnidRenderer;
 
 @EventBusSubscriber(Dist.CLIENT)
@@ -19,5 +20,6 @@ public class PickadoorModEntityRenderers {
 		event.registerEntityRenderer(PickadoorModEntities.SEWER_SHADOW.get(), SewerShadowRenderer::new);
 		event.registerEntityRenderer(PickadoorModEntities.ARACHNID.get(), ArachnidRenderer::new);
 		event.registerEntityRenderer(PickadoorModEntities.SAND_SPIRIT.get(), SandSpiritRenderer::new);
+		event.registerEntityRenderer(PickadoorModEntities.IKEA_EMPLOYEE.get(), IkeaEmployeeRenderer::new);
 	}
 }
