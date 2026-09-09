@@ -103,7 +103,7 @@ public class SandSpiritEntity extends Monster {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		SandParticleTickProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
+		SandParticleTickProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
