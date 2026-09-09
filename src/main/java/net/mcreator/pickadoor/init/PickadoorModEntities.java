@@ -26,11 +26,11 @@ public class PickadoorModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<SewerShadowEntity>> SEWER_SHADOW = register("sewer_shadow",
 			EntityType.Builder.<SewerShadowEntity>of(SewerShadowEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 0.25f));
 	public static final DeferredHolder<EntityType<?>, EntityType<ArachnidEntity>> ARACHNID = register("arachnid",
 			EntityType.Builder.<ArachnidEntity>of(ArachnidEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<SandSpiritEntity>> SAND_SPIRIT = register("sand_spirit",
 			EntityType.Builder.<SandSpiritEntity>of(SandSpiritEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(0.6f, 1.8f));
 
